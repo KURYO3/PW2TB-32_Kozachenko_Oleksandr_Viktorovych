@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Веб калькулятор</title>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div>
+            <h2>Калькулятор</h2>
+
+            <form id="fuelForm">
+                <div class="input-group">
+                    <label for="masavug">Донецьке газове вугілля марки ГР, т:</label>
+                    <input type="number" id="masavug" name="masavug">
+                </div>
+                <div class="input-group">
+                    <label for="masamaz">Високосірчистий мазут марки 40, т:</label>
+                    <input type="number" id="masamaz" name="masamaz">
+                </div>
+                <div class="input-group">
+                    <label for="masagaz">Природний газ із газопроводу Уренгой-Ужгород, м3:</label>
+                    <input type="number" id="masagaz" name="masagaz">
+                </div>
+
+                <input type="button" value="Розрахувати" onclick="calculate()">
+            </form>
+
+            <p id="result"></p>
+        </div>
+    </div>
+
+</body>
+
+</html>
